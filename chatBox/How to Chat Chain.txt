@@ -1,0 +1,68 @@
+13-10-2023-10:50
+User: Could you explain how to implement convo chaining for my personal AI application (which is you btw)? While also having the feature that it checks the token count before sending the message to ensure we are not going over our token limit
+GPT: Sure, I'd be happy to explain how to implement conversation chaining and token count checking in Python for an AI application like me.
+
+Firstly, let's understand what conversation chaining is. Conversation chaining is a method used in AI applications to maintain the context of a conversation. It involves passing the history of the conversation to the model so that it can generate a response that is relevant to the ongoing conversation.
+
+Here's a simple example of how you might implement conversation chaining:
+
+```python
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+model = GPT2LMHeadModel.from_pretrained("gpt2")
+
+conversation_history = []
+
+while True:
+    user_input = input("User: ")
+    conversation_history.append(user_input)
+
+    # Concatenate the conversation history and encode it
+    encoded_history = tokenizer.encode(" ".join(conversation_history), return_tensors='pt')
+
+    # Generate a response
+    outputs = model.generate(encoded_history, max_length=1000, pad_token_id=tokenizer.eos_token_id)
+    response = tokenizer.decode(outputs[:, encoded_history.shape[-1]:][0], skip_special_tokens=True)
+
+    print("AI: ", response)
+    conversation_history.append(response)
+```
+
+In the above code, we maintain a list `conversation_history` to keep track of the conversation. We append the user's input and the AI's responses to this list. Before generating a response, we encode the entire conversation history and pass it to the model.
+
+Now, let's talk about checking the token count before sending the message. This is important because models like GPT-2 and GPT-3 have a maximum limit on the number of tokens they can process in a single request. For GPT-3, this limit is 4096 tokens.
+
+Here's how you can modify the above code to check the token count:
+
+```python
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+model = GPT2LMHeadModel.from_pretrained("gpt2")
+
+conversation_history = []
+
+while True:
+    user_input = input("User: ")
+    conversation_history.append(user_input)
+
+    # Concatenate the conversation history and encode it
+    encoded_history = tokenizer.encode(" ".join(conversation_history), return_tensors='pt')
+
+    # Check the token count
+    if encoded_history.shape[1] > 4096:
+        print("The conversation is too long. Please shorten it.")
+        continue
+
+    # Generate a response
+    outputs = model.generate(encoded_history, max_length=1000, pad_token_id=tokenizer.eos_token_id)
+    response = tokenizer.decode(outputs[:, encoded_history.shape[-1]:][0], skip_special_tokens=True)
+
+    print("AI: ", response)
+    conversation_history.append(response)
+```
+
+In this modified code, we check the number of tokens in `encoded_history` before generating a response. If the token count exceeds the limit, we print a message and skip the current iteration of the loop.
+
+Please note that this is a very basic implementation. In a real-world application, you would need to handle more edge cases and possibly implement more sophisticated conversation management techniques.

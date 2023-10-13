@@ -1,0 +1,54 @@
+1697116695267	geckodriver	INFO	Listening on 127.0.0.1:63614
+1697116697217	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63615" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NICHOL~1.ALE\\AppData\\Local\\Temp\\rust_mozprofilehmhc17"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697116697752	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697116697790	Marionette	INFO	Listening on port 63627
+WebDriver BiDi listening on ws://127.0.0.1:63615
+Read port: 63627
+1697116697965	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63615/devtools/browser/66d6b2d3-15bb-4e5a-b64c-363b727c3ecd
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\NICHOL~1.ALE\AppData\Local\Temp\rust_mozprofilehmhc17\thumbnails) because it does not exist
+1697116908593	Marionette	INFO	Stopped listening on port 63627
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+"--remote-debugging-port" "63805" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NICHOL~1.ALE\\AppData\\Local\\Temp\\rust_mozprofileqq3067"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697116864006	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697116864044	Marionette	INFO	Listening on port 63816
+Read port: 63816
+WebDriver BiDi listening on ws://127.0.0.1:63805
+1697116864114	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63805/devtools/browser/973cfcba-5e90-4b6a-b551-4e824b77c51a
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\NICHOL~1.ALE\AppData\Local\Temp\rust_mozprofileqq3067\thumbnails) because it does not exist
+1697116908131	Marionette	INFO	Stopped listening on port 63816
+Dynamically enable window occlusion 1
+1697117825553	geckodriver	INFO	Listening on 127.0.0.1:64686
+1697117827540	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64687" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NICHOL~1.ALE\\AppData\\Local\\Temp\\rust_mozprofileudfM5W"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697117828074	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697117828110	Marionette	INFO	Listening on port 64699
+WebDriver BiDi listening on ws://127.0.0.1:64687
+Read port: 64699
+1697117828254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64687/devtools/browser/1ce8eb28-8bb2-4bb2-ad3c-f1cb81583b61
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\NICHOL~1.ALE\AppData\Local\Temp\rust_mozprofileudfM5W\thumbnails) because it does not exist
+1697119231985	geckodriver	INFO	Listening on 127.0.0.1:50558
+1697119233979	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50559" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NICHOL~1.ALE\\AppData\\Local\\Temp\\rust_mozprofilea8f6Vi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697119234512	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697119234552	Marionette	INFO	Listening on port 50568
+WebDriver BiDi listening on ws://127.0.0.1:50559
+Read port: 50568
+1697119234709	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50559/devtools/browser/11468f51-f556-408c-ab05-ac62fcd6c091
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\NICHOL~1.ALE\AppData\Local\Temp\rust_mozprofilea8f6Vi\thumbnails) because it does not exist
+1697119271374	Marionette	INFO	Stopped listening on port 50568
+Dynamically enable window occlusion 1

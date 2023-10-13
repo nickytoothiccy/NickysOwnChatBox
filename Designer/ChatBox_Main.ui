@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1077</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>9000</width>
+    <height>9000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>NICKY AI</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">layoutTopMargin:0
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">layoutTopMargin:0</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1521</width>
+      <height>1031</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>899999</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(253, 255, 226);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="chat">
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>290</y>
+        <width>72</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>GPT-4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GPT-3.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DALLE</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QScrollBar" name="responseScroll">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>20</y>
+        <width>17</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="uploadPushButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Upload File</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="imageGenerate">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>250</y>
+        <width>101</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Generate Image</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0)
+</string>
+      </property>
+      <property name="text">
+       <string>CLEAR</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>520</y>
+        <width>951</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sendPushButton">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>520</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Send</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>20</y>
+        <width>941</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+background-color:rgb(255, 255, 255)</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="image">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>140</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Write the Image you want created</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="imageDesc">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>270</y>
+        <width>289</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="send">
+         <property name="toolTip">
+          <string>Search Device by Name or IP </string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">Background-Color: rgb(0, 255, 0)</string>
+         </property>
+         <property name="text">
+          <string>Send</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="returnChat">
+         <property name="toolTip">
+          <string>Search Device by Name or IP </string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">Background-Color: rgb(0, 255, 0)</string>
+         </property>
+         <property name="text">
+          <string>Return to Chat</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="dalleImage">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>0</y>
+        <width>1024</width>
+        <height>1024</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Images/placeholder900x900.png</pixmap>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1077</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="options">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="promptDesigner"/>
+    <addaction name="saveChat"/>
+   </widget>
+   <addaction name="options"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="promptDesigner">
+   <property name="text">
+    <string>User Settings</string>
+   </property>
+  </action>
+  <action name="actionSave_Convo">
+   <property name="text">
+    <string>Save Convo</string>
+   </property>
+  </action>
+  <action name="actionOpen_Dall_E">
+   <property name="text">
+    <string>Open Dall-E</string>
+   </property>
+  </action>
+  <action name="saveChat">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
